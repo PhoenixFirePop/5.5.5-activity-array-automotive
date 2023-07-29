@@ -8,17 +8,33 @@ console.log(v.make)
 
 //After you write the derived Car class, you should test it out.
 
+class Vehicle {
+    constructor(make, model, year, color, mileage) {        
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.passenger = 0;
+        this.speed = 0;
+        this.mileage = mileage;
+        this.started = false;
+        this.numberOfWheels = 0;
+    }
 //Note: You can code your derived Car class here or make a file named index.js and do it there.
-
-
 //TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
 
-
-
-
-
-
-
+class Car extends Vehicle {
+    constructor(make, model, year, color, mileage) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.passenger = 0;
+        this.speed = 0;
+        this.mileage = mileage;
+        this.started = false;
+        this.numberOfWheels = 0;
+    }
 
 
 
